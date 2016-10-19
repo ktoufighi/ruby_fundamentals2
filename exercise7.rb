@@ -1,3 +1,4 @@
+# lets define a method to display the cohorts and students number
 def display_students(students_list)
   students_list.each do |cohort, number|
     puts "students in #{cohort} were #{number}"
@@ -33,3 +34,12 @@ students.each do |cohort, number|
 end
 
 display_students(students)
+
+
+# BONUS: Calculate the total number of students across all cohorts using
+# each and a variable to keep track of the total. Output the result.
+total_students = 0
+students.each do |cohort, number|
+total_students += number
+end
+puts "total number of students are: #{total_students}"
